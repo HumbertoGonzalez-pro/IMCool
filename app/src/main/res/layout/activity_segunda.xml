@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondoApp"
+    android:orientation="vertical"
+    tools:context=".SegundaActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:padding="15dp"
+        android:text="You Result"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="44sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="582dp"
+        android:layout_margin="30dp"
+        android:layout_weight="1"
+        android:background="@color/fondoTarjeta"
+        app:cardBackgroundColor="@color/fondoTarjeta">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tvEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Normal"
+                android:textAllCaps="true"
+                android:textColor="@color/textoNomral"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvResultado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="60sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEstado" />
+
+            <TextView
+                android:id="@+id/tvMuestraRango"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:text="a"
+                android:textAlignment="center"
+                android:textColor="@color/colorTexto"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvResultado" />
+
+            <TextView
+                android:id="@+id/tvRango"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvMuestraRango" />
+
+            <TextView
+                android:id="@+id/tvMensaje"
+                android:layout_width="249dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="40dp"
+                android:text="y"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvRango" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="236dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/save"
+                android:padding="15dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:text="Save result"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvMensaje" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnRecalcular"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/colorAccent"
+        android:text="Re-Calculate your bmi"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+</LinearLayout>
